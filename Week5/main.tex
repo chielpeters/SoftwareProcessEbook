@@ -1,0 +1,122 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{20pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+\usepackage{epigraph}
+
+% \epigraphsize{\small}% Default
+\setlength\epigraphwidth{12cm}
+\setlength\epigraphrule{0pt}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\epigraph}{\@epitext{#1}}{\itshape\@epitext{#1}}{}{}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Human Resources}\\ % Title
+The value of internal referrals} % Subtitle
+
+\author{\textsc{Cindy Berghuizen \& \\ Chiel Peters} % Author
+\\{\textit{University of Amsterdam}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+\epigraph{``Human resources are like natural resources; they're often buried deep. You have to go looking for them, they're not just lying around on the surface. You have to create the circumstances where they show themselves."}{--- \textup{Ken Robinson}}
+
+\begin{abstract}
+\end{abstract}
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction}
+
+\section*{Personal Experience}
+In this section our personal experience and thoughts related to the value of internal referrals are stated. This section was written before any of the relevant theory and models were researched to avoid any biases in our observations. The effects of internal referrals are measured on two different levels, the personal level that is the effects on a person making the referral and the organizational level which measures the effects based on the organizational as a whole. To give some contexts to our personal experience first our backgrounds are discussed after which the effects on the two levels are mentioned.
+
+\subsection*{Background}
+
+ Since three years I have been working at small risk consultancy firm with approximately ten employees.All the employees have the same background education and are working in a very specific field. The projects are done in very small groups which consist of one to three persons. Being so small means the communication lines are short and a lot of situations are discussed with the whole firm. Recently a new student position opened up and sollications poured in.  Now one of my college friends which I now know for about ten years was searching for such a position. From the ten employees four of those came directly from referrals made by the employees themselves so the culture of referrals was there. After a few moments of thought I decided to go through and later on he was hired for the position. In the next section this decision is elaborated upon and the thought process is carefully. 
+
+\subsection*{Personal Factors}
+
+This section covers the personal factors involved into internal referrals. Referring a friend or acquaintance often involves numerous trade offs and carefull examination. Each of the following subsections contains a question or thought process that lead to making the referral decision.
+
+\subsubsection*{Does the person being referred fit into the team?}
+\subsubsection*{What dangers do I run when I stick my stick my neck out for this person?}
+\subsubsection*{What are the consequences of breaking the seperation of business and private life?}
+
+\subsection*{Organizational Factors}
+
+In this section the organizational factors of internal referrals are discussed. As stated in the introduction a lot of firms have bonus referral programs which reward employees to refer friends or acquaintances. Therefore it seems there are only benefits to referrals and no downsides. These benefits and possible downsides are discussed in each of the subsections.
+
+\subsubsection*{What are the main differences between external or internal referrals?}
+\subsubsection*{Do referrals create islands in the team?}
+\subsubsection*{Does the personal atmosphere hurt the performance?}
+
+\section*{Theory and models}
+
+\section*{Conclusion}
+
+\section*{Annotated Bibliography}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
